@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA_PATH = ROOT / "commodities.csv"
+DATA_PATH = ROOT / "data/commodities.csv"
 
 def load_dataset() -> pd.DataFrame:
     "Load dataset with date as index"
