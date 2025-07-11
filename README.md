@@ -1,10 +1,10 @@
-# 📈 Commodity Price Forecasting
+# Commodity Price Forecasting
 
-This project aims to forecast prices of key agricultural commodities — **soybeans, wheat, and beef** — using various time series modeling approaches. It compares classical, statistical, machine learning, and deep learning models to determine the most accurate one.
+This project aims to forecast prices of key agricultural commodities — **Carne Vacuna, Soja y Trigo** — using various time series modeling approaches. It compares classical, statistical, machine learning, and deep learning models to determine the most accurate one.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
@@ -90,7 +90,7 @@ jupyter notebook main.ipynb
 
 ---
 
-## 📊 Methodology
+## Methodology
 
 Each model is developed and tested in its respective notebook inside the `notebooks/` folder. There, hyperparameters are tuned, model performance is evaluated, and predictions are visualized.
 
@@ -112,6 +112,6 @@ The final model selection is based on error metrics and prediction performance o
 
 ## Author
 
-María Sol Pera – [LinkedIn](https://www.linkedin.com/in/msolpera)
+María Sol Pera – [LinkedIn](https://www.linkedin.com/in/m-sol-pera)
 
 This project was developed as part of a broader effort to analyze time series of agricultural commodity prices.
