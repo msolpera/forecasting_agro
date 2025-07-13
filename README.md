@@ -107,7 +107,31 @@ Evaluation metrics:
 ## Final Comparison
 
 The final model selection is based on error metrics and prediction performance on the test set.
+![Comparison Plot](model_comparison.png)
 
+## Conclusions
+
+This analysis explored three distinct modeling approaches — SARIMAX, XGBoost, and LSTM — to forecast the monthly prices of three key agricultural commodities: **Carne Vacuna**, **Trigo**, and **Soja**.
+
+Each model was developed and evaluated based on:
+
+- Feature relevance and preprocessing needs
+- Capacity to capture trend and seasonality
+- Forecasting accuracy using RMSE, MAE, and MAPE
+
+**SARIMAX** leveraged time series decomposition and exogenous variables to model underlying trends and seasonal patterns.  
+**XGBoost** combined manually engineered lag features with tree-based learning, offering flexibility and robustness.  
+**LSTM**, a recurrent neural network model, was trained on normalized sequences to capture complex temporal dependencies.
+
+After comparing the performance of all models across the three series, the final results suggest that:
+
+- **XGBoost consistently achieved strong predictive accuracy** while maintaining lower complexity and training time.
+- **SARIMAX performed well**, particularly when exogenous variables were present and well-correlated.
+- **LSTM models showed potential**, but were more sensitive to data scaling and required careful tuning to avoid overfitting.
+
+> **Final selection**: XGBoost was chosen as the best-performing model overall, balancing accuracy, interpretability, and reproducibility.
+
+This modeling pipeline provides a solid foundation for future extensions such as multistep forecasting, inclusion of external economic indicators, or deployment in real-time prediction environments.
 ---
 
 ## Author

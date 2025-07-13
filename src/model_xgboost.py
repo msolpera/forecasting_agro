@@ -41,9 +41,13 @@ class XGBoostPipeline:
 
         return self
 
-    def predict(self, test_feat, target_col):
-        self.y_test_true = test_feat[target_col]
-        X_test = test_feat.drop(columns=target_col)
+    def predict(self, test_feat, target_col, test=True):
+        if test:
+            self.y_test_true = test_feat[target_col]
+            X_test = test_feat.drop(columns=target_col)
+        else:
+            X_test = test_feat
+        
         y_pred_test = self.model.predict(X_test)
         self.y_pred_test=y_pred_test
 
