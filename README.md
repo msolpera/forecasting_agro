@@ -56,7 +56,6 @@ To explore, evaluate, and compare various forecasting approaches:
 - Classical models: SARIMAX
 - Machine Learning: XGBoost
 - Deep Learning: LSTM
-- AutoML: AutoTS (in separate notebooks)
 
 ---
 
